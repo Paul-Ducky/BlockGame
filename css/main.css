@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #262626;
+    overflow: hidden;
+}
+#score-container{
+    display: flex;
+    background-color: transparent;
+    color: whitesmoke;
+    height: 50px;
+    width: 300px;
+    justify-content: center;
+}
+#score {
+    z-index: 1001;
+    margin-left: 10px;
+    font-size: 2rem;
+    align-self: center;
+}
+#life-tracker{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    align-self: center;
+}
+#player{
+    z-index: 1000;
+    position: absolute;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: yellow;
+    border-style: solid;
+    background-color: blue;
+    transition: 15ms;
+}
+
+.hostile{
+    transition: 5s;
+}
+
+.chaser{
+    z-index: 999;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    background-color: chocolate;
+}
+
+.runner{
+    z-index: 999;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-width: 1px;
+    border-color: bisque;
+    border-style: solid;
+    background-color: chocolate;
+}
+
+.big-boi{
+    z-index: 999;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-width: 3px;
+    border-color: darkslategray;
+    border-style: solid;
+    background-color: brown;
+}
+
+.terminator{
+    position: absolute;
+    z-index: 999;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 25px 12.5px;
+    border-color: transparent transparent #580000 transparent;
+}
+
+.life{
+    position: absolute;
+    z-index: 999;
+    height: 40px;
+    width: 40px;
+    border-width: 3px;
+    border-color: #000335;
+    border-style: solid;
+    background-color: #177900;
+}
+
+.immunity{
+    position: absolute;
+    z-index: 999;
+    height: 10px;
+    width: 10px;
+    border-width: 1px;
+    border-color: #29bc48;
+    border-style: solid;
+    background-color: #ab8000;
+}
