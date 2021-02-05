@@ -102,6 +102,13 @@ function game() {
                     player.style.left = (currentLeft - speed) + "px";
                 }
                 break;
+            case "a":
+                if (currentLeft <= 0) {
+                    player.style.left = 5 + "px";
+                } else {
+                    player.style.left = (currentLeft - speed) + "px";
+                }
+                break;
             case "d":
                 if (currentLeft >= innerWidth - player.offsetWidth) {
                     player.style.left = innerWidth - player.offsetWidth - 5 + "px";
@@ -110,6 +117,13 @@ function game() {
                 }
                 break;
             case "z":
+                if (currentTop <= 0) {
+                    player.style.top = 5 + "px";
+                } else {
+                    player.style.top = (currentTop - speed) + "px";
+                }
+                break;
+            case "w":
                 if (currentTop <= 0) {
                     player.style.top = 5 + "px";
                 } else {
