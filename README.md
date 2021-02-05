@@ -4,6 +4,7 @@
 ###
 #### I hope you enjoy the game and feedback is always appreciated.
 
+##### The game https://paul-ducky.github.io/BlockGame/.
 
 ## Learning objectives
 - move DOM elements on the page
