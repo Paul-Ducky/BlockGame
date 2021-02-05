@@ -4,6 +4,7 @@
 ###
 #### I hope you enjoy the game and feedback is always appreciated.
 
+##### The game https://paul-ducky.github.io/BlockGame/.
 
 ## Learning objectives
 - move DOM elements on the page
@@ -24,6 +25,9 @@ Also, the starting life is set to 5.
 There are way more than 4 squares that move around! Most are bad, anything green or that does not move is good, eg: +1life.
 
 
+Oh and don't touch the triangles!
+
+
 ## things I learned
 
 - How to 
@@ -34,7 +38,7 @@ There are way more than 4 squares that move around! Most are bad, anything green
 
 ## The result
 
-![I made this!](https://i.gyazo.com/411e7863e8041394f2f9f6887cfa7d76.mp4)
+[![Image from Gyazo](https://i.gyazo.com/411e7863e8041394f2f9f6887cfa7d76.gif)](https://gyazo.com/411e7863e8041394f2f9f6887cfa7d76)
 
 ### notes
 
