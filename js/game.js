@@ -49,12 +49,12 @@ function game() {
         lifeTracker.innerText = "lives: " + lives;
         if (lives <= 0) {
             // if lives becomes 0 or less -> stop everything;
+            reset();
+            alert("you survived " + time + " Seconds! and Scored: " + totalScore + " points!");
             clearInterval(runTimer);
             clearInterval(tickRate);
             clearInterval(moveRate);
             clearInterval(collisionCheckRate);
-            alert("you survived " + time + " Seconds! and Scored: " + totalScore + " points!");
-            reset();
             game();
         }
     }
@@ -89,6 +89,7 @@ function game() {
 //                  \\===============================================//
 
     function reset() {
+        time = 0;
         totalScore = 0;
         lives = 5;
         speed = 10;
@@ -188,6 +189,7 @@ function game() {
     function removeImmunity() {
         player.className = "";
         immune = false;
+        totalImmunity = 0;
         return immune;
     }
 
