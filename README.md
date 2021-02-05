@@ -24,6 +24,9 @@ Also, the starting life is set to 5.
 There are way more than 4 squares that move around! Most are bad, anything green or that does not move is good, eg: +1life.
 
 
+Oh and don't touch the triangles!
+
+
 ## things I learned
 
 - How to 
