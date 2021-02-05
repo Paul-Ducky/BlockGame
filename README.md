@@ -34,7 +34,7 @@ There are way more than 4 squares that move around! Most are bad, anything green
 
 ## The result
 
-![I made this!](https://gyazo.com/411e7863e8041394f2f9f6887cfa7d76)
+![I made this!](https://i.gyazo.com/411e7863e8041394f2f9f6887cfa7d76.mp4)
 
 ### notes
 
