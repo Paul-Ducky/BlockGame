@@ -49,12 +49,12 @@ function game() {
         lifeTracker.innerText = "lives: " + lives;
         if (lives <= 0) {
             // if lives becomes 0 or less -> stop everything;
-            reset();
-            alert("you survived " + time + " Seconds! and Scored: " + totalScore + " points!");
-            clearInterval(runTimer);
             clearInterval(tickRate);
+            clearInterval(runTimer);
             clearInterval(moveRate);
             clearInterval(collisionCheckRate);
+            alert("you survived " + time + " Seconds! and Scored: " + (totalScore-1) + " points!");
+            reset();
             game();
         }
     }
