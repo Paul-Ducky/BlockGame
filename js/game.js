@@ -1,7 +1,7 @@
 //          //====================================================================\\
 //          || get all the variables muhahahaha --> initial settings for the game. ||
 //          \\====================================================================//
-function game() {
+
 
     const target = document.getElementById('target');
     const player = document.getElementById('player');
@@ -16,6 +16,7 @@ function game() {
     let immune = false;
     let blocks = []
 
+function game() {
 //       //===============================================\\
 //      || All time-based functions: time, score, movement ||
 //       \\===============================================//
@@ -82,63 +83,6 @@ function game() {
     let tickRate = setInterval(ticks, 100);
     let moveRate = setInterval(move, 4000);
 
-
-//                  //=================\\
-//                  || player controls ||
-//                  \\=================//
-
-
-// sadly css needs "px" so to adjust we need to remove them
-// also had to style inline, or else we'd jump into the borders on first key downs!
-
-    document.addEventListener("keydown", function (event) {
-        let currentLeft = Number(player.style.left.substring(0, (player.style.left.length - 2)));
-        let currentTop = Number(player.style.top.substring(0, (player.style.top.length - 2)));
-        switch (event.key) {
-            case "q":
-                if (currentLeft <= 0) {
-                    player.style.left = 5 + "px";
-                } else {
-                    player.style.left = (currentLeft - speed) + "px";
-                }
-                break;
-            case "a":
-                if (currentLeft <= 0) {
-                    player.style.left = 5 + "px";
-                } else {
-                    player.style.left = (currentLeft - speed) + "px";
-                }
-                break;
-            case "d":
-                if (currentLeft >= innerWidth - player.offsetWidth) {
-                    player.style.left = innerWidth - player.offsetWidth - 5 + "px";
-                } else {
-                    player.style.left = (currentLeft + speed) + "px";
-                }
-                break;
-            case "z":
-                if (currentTop <= 0) {
-                    player.style.top = 5 + "px";
-                } else {
-                    player.style.top = (currentTop - speed) + "px";
-                }
-                break;
-            case "w":
-                if (currentTop <= 0) {
-                    player.style.top = 5 + "px";
-                } else {
-                    player.style.top = (currentTop - speed) + "px";
-                }
-                break;
-            case "s":
-                if (currentTop >= innerHeight - player.offsetHeight) {
-                    player.style.top = innerHeight - player.offsetHeight - 5 + "px";
-                } else {
-                    player.style.top = (currentTop + speed) + "px";
-                }
-                break;
-        }
-    });
 
 //                  //===============================================\\
 //                  ||Function overview: reset - spawning - collision||
@@ -327,6 +271,63 @@ function game() {
     }
 
 }
+
+
+//                  //=================\\
+//                  || player controls ||
+//                  \\=================//
+
+
+// sadly css needs "px" so to adjust we need to remove them
+// also had to style inline, or else we'd jump into the borders on first key downs!
+document.addEventListener("keydown", function (event) {
+    let currentLeft = Number(player.style.left.substring(0, (player.style.left.length - 2)));
+    let currentTop = Number(player.style.top.substring(0, (player.style.top.length - 2)));
+    switch (event.key) {
+        case "q":
+            if (currentLeft <= 0) {
+                player.style.left = 5 + "px";
+            } else {
+                player.style.left = (currentLeft - speed) + "px";
+            }
+            break;
+        case "a":
+            if (currentLeft <= 0) {
+                player.style.left = 5 + "px";
+            } else {
+                player.style.left = (currentLeft - speed) + "px";
+            }
+            break;
+        case "d":
+            if (currentLeft >= innerWidth - player.offsetWidth) {
+                player.style.left = innerWidth - player.offsetWidth - 5 + "px";
+            } else {
+                player.style.left = (currentLeft + speed) + "px";
+            }
+            break;
+        case "z":
+            if (currentTop <= 0) {
+                player.style.top = 5 + "px";
+            } else {
+                player.style.top = (currentTop - speed) + "px";
+            }
+            break;
+        case "w":
+            if (currentTop <= 0) {
+                player.style.top = 5 + "px";
+            } else {
+                player.style.top = (currentTop - speed) + "px";
+            }
+            break;
+        case "s":
+            if (currentTop >= innerHeight - player.offsetHeight) {
+                player.style.top = innerHeight - player.offsetHeight - 5 + "px";
+            } else {
+                player.style.top = (currentTop + speed) + "px";
+            }
+            break;
+    }
+});
 
 game();
 //@todo add movement to hostiles!
