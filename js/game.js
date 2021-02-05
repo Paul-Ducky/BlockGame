@@ -80,7 +80,7 @@ function game() {
     let collisionCheckRate = setInterval(collision,10)
     let runTimer = setInterval(timer, 800); // keep this on 1k for 1sec intervals --> find a way to update more frequently without messing with score
     let tickRate = setInterval(ticks, 100);
-    let moveRate = setInterval(move, 4950);
+    let moveRate = setInterval(move, 4000);
 
 
 //                  //=================\\
@@ -147,6 +147,7 @@ function game() {
     function reset() {
         totalScore = 0;
         lives = 5;
+        speed = 10;
         points.innerText = "00";
         totalImmunity = 0;
         blocks = document.querySelectorAll(".collidable");

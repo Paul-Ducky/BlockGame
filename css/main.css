@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #262626;
     overflow: hidden;
 }
+
 #score-container{
     display: flex;
     background-color: transparent;
@@ -15,17 +17,20 @@ body{
     width: 300px;
     justify-content: center;
 }
+
 #score {
     z-index: 1001;
     margin-left: 10px;
     font-size: 2rem;
     align-self: center;
 }
+
 #life-tracker{
     margin-left: 10px;
     font-size: 1.5rem;
     align-self: center;
 }
+
 #player{
     z-index: 1000;
     position: absolute;
